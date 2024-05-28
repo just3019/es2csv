@@ -67,3 +67,16 @@ Usage
   -h, --help                               show this help message and exit
 
 [ `Usage Examples <./docs/EXAMPLES.rst>`_ | `Release Changelog <./docs/HISTORY.rst>`_ ]
+
+补充
+----
+
+Docker环境使用
+```
+docker pull demonslh/es2csv
+
+docker run --rm --network=host -v /root/es2csv:/data demonslh/es2csv es2csv -i t_user -q '*' -o database.csv
+
+```
+
+
